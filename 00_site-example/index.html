@@ -1,0 +1,65 @@
+<!-- Specifies what type of parser to use: HTML5 -->
+<!DOCTYPE html>
+<!-- All elements are descendants of the *html* root element -->
+<html>
+<!-- the *head* element contains metadata about the document that isn't rendered directly in the page. Also used for configuring settings. -->
+<head>
+    <!-- Specifies page character set -->
+    <meta charset="UTF-8">
+    <!-- Makes the width of the page correspond to the width of the browser window -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Page title, appears in browser tab -->
+    <title>Intro to HTML</title>
+    <!-- CSS can be used inside a <style> tag -->
+    <style>
+        * { /* selects all elements */
+            box-sizing: border-box; /* complicated settings */
+        }
+        body {
+            font-family: sans-serif;
+            margin: 0; /* remove default page margin */
+        }
+    </style>
+    <!-- CSS can also be linked to an external stylesheet -->
+    <link rel="stylesheet" href="./index.css"> <!-- relative link to CSS file -->
+</head>
+<!-- All page content goes into the *body* tag -->
+<body>
+    <div class="navbar dark">
+        <ul>
+            <!-- Link with relative path -->
+            <!-- links that you can click are actually *a* tags, not *link* tags. -->
+            <li><a href="./index.html">Home</a></li>
+            <!-- link with absolute path -->
+            <li><a href="https://github.com/julian-hecker/web-dev-intro">Github</a></li>
+        </ul>
+    </div>
+    <!-- *div*s let you structure content -->
+    <!-- class attributes can be targeted in CSS -->
+    <!-- you can have multiple classes per element, separated by spaces -->
+    <div class="main wrapper">
+        <h2>Greetings, dear humans!</h2>
+        <img src="./virus.jpg" alt="Don't get Coronavirus!">
+        <p>My name is Julian and I made a page for you all to learn a couple of things from. It's very ugly and I hope that you enjoy it despite its horrid ugliness.</p>
+        <!-- Lorem Ipsum text is often used as placeholder text, when you want content but dont know what to write -->
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione ad sunt dolorum rerum, a quae facilis ab incidunt totam! Nesciunt expedita officiis iusto provident labore sit fugiat tempora libero praesentium?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit inventore adipisci expedita error accusantium eos labore sunt illo omnis voluptates nobis alias consequuntur deleniti, quisquam eius impedit beatae dolore architecto. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut eum nam maxime accusamus asperiores nihil aspernatur blanditiis voluptates dolorem corrupti, ad corporis quasi aliquid sit voluptate! Deleniti sint officia repellendus?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia, excepturi. Eveniet soluta a perferendis nesciunt magnam numquam non ad, cum aliquid placeat, amet esse suscipit culpa optio facilis eos harum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, doloribus?</p>
+
+
+        <h2>I hope you are all doing well!</h2>
+        <p>I really hope so! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni, architecto aliquam. Incidunt quam ex aut iusto laboriosam necessitatibus expedita est deserunt eaque esse, aliquid ducimus quo dolores provident error minus.</p>
+        <img src="./beach.jpeg" alt="The beach we'd all rather be at">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, consectetur nemo ad quidem repellendus perspiciatis fuga necessitatibus nesciunt laborum modi magnam! At expedita quia odio ab illo hic. Dolore eaque repudiandae velit maiores quas alias consequuntur corrupti nihil, vitae, quae recusandae minus? Minima quia magnam cumque. Corrupti perspiciatis quasi dolor.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat ipsa voluptatibus reprehenderit molestiae non labore accusantium doloribus ratione neque dignissimos.</p>
+
+        <h2>One Last Heading</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur id aliquam odio laudantium facilis fugit pariatur ullam nesciunt ipsum expedita commodi omnis quis, tenetur eius. Nulla sapiente expedita libero quae, illum in nesciunt amet veritatis dolorum. Facere ab dolorum voluptatibus, corporis placeat in odit nostrum aliquid eligendi recusandae temporibus sunt.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis, ea recusandae ad dolor, vero aliquam fugiat nostrum quibusdam qui dolores labore iusto, voluptatem sequi nisi architecto harum. Aut, quod fugiat?</p>
+
+    </div>
+    <div class="footer dark">
+        <p>Made with &lt;3 by <a href="https://github.com/julian-hecker">Julian Hecker</a>.</p>
+    </div>
+</body>
+</html>
